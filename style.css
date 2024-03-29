@@ -200,6 +200,7 @@ footer {
 .active {
   display: block !important;
 }
+
 .bigger-container {
   background-color: rgb(9, 74, 101);
   position: fixed;
@@ -209,3 +210,4 @@ footer {
   left: 0;
   display: none;
 }
+
