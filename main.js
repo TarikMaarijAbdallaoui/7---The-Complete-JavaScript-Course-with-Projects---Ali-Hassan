@@ -1,97 +1,14 @@
-// video 1 => 4
 
-/* const myheader = document.querySelector(".myheader");
+const buy = document.getElementsByClassName("btn")[0]
+const biggerContainer = document.querySelector(".bigger-container")
 
-// myheader.remove()
+buy.addEventListener("click", (eo) => { 
+  biggerContainer.classList.add("active")
+  eo.preventDefault()
+})
 
-const title = document.createElement("h1");
-const section = document.getElementById("sec");
-const main = document.getElementById("main");
-const div = document.getElementById("mydiv");
+const buy1 = document.getElementsByClassName("btn")[1]
 
-div.prepend(title);
-
-title.classList.add("mb", "bc")
-title.classList.remove("bc")
-title.innerText = "Ali Hassan" */
-
-
-// video 5 function declaration 
-/*const myheader = document.querySelector(".myheader");
-const section = document.getElementById("sec");
-const main = document.getElementById("main");
-const mudiv = document.getElementById("mudiv");
-
-const title = document.createElement("h1");
-
-function eldawlya (){
-        mudiv.append(title);
-
-        title.classList.add("mb");
-        
-        title.innerText = "الدولية للتجارة العالمية";
-}
-
-setTimeout( eldawlya , 4000)*/
- 
-
-// video 6 fonction expression 
-/*const myheader = document.querySelector(".myheader");
-const section = document.getElementById("sec");
-const main = document.getElementById("main");
-const mudiv = document.getElementById("mudiv");
-
-const title = document.createElement("h1");*/
-
-/*function eldawlya() {
-  mudiv.append(title);
-
-  title.classList.add("mb");
-
-  title.innerText = "الدولية للتجارة العالمية";
-}
-
-setTimeout(eldawlya, 4000);
-console.log(typeof eldawlya);*/
-
-/* const container = function () {
-  mudiv.append(title);
-
-  title.classList.add("mb");
-
-  title.innerText = "الدولية للتجارة العالمية";
-};
-
-setTimeout( container , 6000)*/
- 
-// video 6.1 arrow fonction 
-const myheader = document.querySelector(".myheader");
-const section = document.getElementById("sec");
-const main = document.getElementById("main");
-const mudiv = document.getElementById("mudiv");
-
-const title = document.createElement("h1");
-
-/*function eldawlya() {
-  mudiv.append(title);
-
-  title.classList.add("mb");
-
-  title.innerText = "الدولية للتجارة العالمية";
-}
-
-setTimeout(eldawlya, 4000);
-console.log(typeof eldawlya);*/
-
-const container = function () {
-  mudiv.append(title);
-
-  title.classList.add("mb");
-
-  title.innerText = "الدولية للتجارة العالمية";
-};
-
-setTimeout( container , 6000)
-
-// video 6.2 resumen
-
+buy1.addEventListener("click", (eo) => { 
+  biggerContainer.classList.remove("active")
+ })
