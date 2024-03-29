@@ -1,24 +1,55 @@
 
-const buy = document.getElementsByClassName("btn")[0]
-const biggerContainer = document.querySelector(".bigger-container")
-const buy1 = document.getElementsByClassName("btn")[1]
-const message = document.getElementById("message")
+
+
+const buy = document.getElementsByClassName("btn")[0];
+const aywaa = document.getElementsByClassName("btn")[1];
+const youtube = document.getElementById("you");
+
+const biggerContainer = document.querySelector(".bigger-contaier");
+
+const kahyaan = document.getElementById("kahyaan")
 const visa = document.getElementById("visa")
 
-buy.addEventListener("click", (eo) => { 
-  biggerContainer.classList.add("active")
-  eo.preventDefault()
 
-  message.style.display = "none"
+
+
+buy.addEventListener("click", (eo) => {
+  biggerContainer.classList.add("active");
+  eo.preventDefault();
+
+  kahyaan.style.display = "none"
+
+  visa.style.display = "block"
+
+});
+
+aywaa.addEventListener("click", (eo) => {
+  // biggerContainer.classList.remove("active");
+
+  kahyaan.style.display = "block"
+  visa.style.display = "none"
+
+
+
+setTimeout(() => {
+  
+  kahyaan.style.display = "none"
+  biggerContainer.classList.remove("active");
+
+}, 3000);
+
+
+});
+
+
+youtube.addEventListener("click", (eo) => {
+    eo.preventDefault()
 })
 
 
-buy1.addEventListener("click", (eo) => { 
-  // biggerContainer.classList.remove("active")
-  message.style.display = "block"
-  visa.style.display = "none"
+const dark = document.getElementById("dark")
+const body = document.getElementById("body")
 
-  setTimeout(() => { biggerContainer.classList.remove("active")}, 3000)
+dark.addEventListener("click", (eo) => { 
+  body.classList.toggle("dark")
  })
-
- 
