@@ -300,4 +300,12 @@ border-radius: 5px;
   display: none;
 }
 
+.dark .card-body{
+  color: black;
+}
 
+.flex-pro{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
